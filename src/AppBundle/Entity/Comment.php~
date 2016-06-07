@@ -38,9 +38,9 @@ class Comment
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date", type="datetime")
+     * @ORM\Column(name="created_at", type="datetime")
      */
-    private $date;
+    private $createdAt;
 
     /**
      * @var string
@@ -114,30 +114,6 @@ class Comment
     }
 
     /**
-     * Set date
-     *
-     * @param \DateTime $date
-     *
-     * @return Comment
-     */
-    public function setDate($date)
-    {
-        $this->date = $date;
-
-        return $this;
-    }
-
-    /**
-     * Get date
-     *
-     * @return \DateTime
-     */
-    public function getDate()
-    {
-        return $this->date;
-    }
-
-    /**
      * Set comment
      *
      * @param string $comment
@@ -160,5 +136,28 @@ class Comment
     {
         return $this->comment;
     }
-}
 
+    /**
+     * Set topic
+     *
+     * @param \AppBundle\Entity\Topic $topic
+     *
+     * @return Comment
+     */
+    public function setTopic(\AppBundle\Entity\Topic $topic = null)
+    {
+        $this->topic = $topic;
+
+        return $this;
+    }
+
+    /**
+     * Get topic
+     *
+     * @return \AppBundle\Entity\Topic
+     */
+    public function getTopic()
+    {
+        return $this->topic;
+    }
+}
