@@ -1,5 +1,6 @@
 <?php
 namespace AppBundle\DataFixtures\ORM;
+use AppBundle\Entity\BannedWord;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use AppBundle\Entity\Topic;
@@ -33,6 +34,12 @@ class LoadBonusCardData implements FixtureInterface
 
                 $manager->persist($comment);
             }
+        }
+
+        for ( $i=0; $i<20; $i++ ) {
+            $badWord = new BannedWord();
+            $badWord->setWord($faker->unique()->word);
+            $manager->persist($badWord);
         }
 
         $manager->flush();

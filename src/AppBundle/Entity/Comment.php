@@ -3,6 +3,8 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use AppBundle\Validator\Constraints as AppAssert;
 
 /**
  * Comment
@@ -25,6 +27,9 @@ class Comment
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=100, nullable=false)
+     *
+     * @Assert\NotBlank( message = "This field should not be empty." )
+     * @AppAssert\IsAdminName
      */
     private $name;
 
@@ -32,6 +37,9 @@ class Comment
      * @var string
      *
      * @ORM\Column(name="email", type="string", length=100, nullable=false, unique=true)
+     *
+     * @Assert\NotBlank( message = "This field should not be empty." )
+     * @Assert\Email( message = "The email '{{ value }}' is not a valid email." )
      */
     private $email;
 
@@ -46,6 +54,8 @@ class Comment
      * @var string
      *
      * @ORM\Column(name="comment", type="text", nullable=false)
+     *
+     * @Assert\NotBlank( message = "This field should not be empty." )
      */
     private $comment;
 

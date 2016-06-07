@@ -10,4 +10,19 @@ namespace AppBundle\Repository;
  */
 class TopicRepository extends \Doctrine\ORM\EntityRepository
 {
+
+    public function findAllWithCounts() {
+
+        $query = $this->getEntityManager()->createQuery(
+            'SELECT t, count(c) AS commentsCount
+            FROM AppBundle:Topic t
+            LEFT JOIN AppBundle:Comment c WITH c.topic = t.id
+            GROUP BY t.id
+            ORDER BY t.title ASC
+            '
+        );
+
+        return $query->getResult();
+    }
+
 }

@@ -7,3 +7,11 @@ services:
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+    validator.contains_banned_words:
+        class: AppBundle\Validator\ContainsBannedWords
+        arguments: ['@doctrine.orm.entity_manager']
+        tags:
+            - { name: validator.constraint_validator }
+    app.comments_manager:
+        class: AppBundle\Comments\CommentsManager
+        arguments: ['@doctrine.orm.entity_manager']

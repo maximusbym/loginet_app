@@ -50,7 +50,6 @@ class Topic
         return $this->id;
     }
     
-    
 
     /**
      * Set title
