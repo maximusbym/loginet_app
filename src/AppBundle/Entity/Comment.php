@@ -72,7 +72,7 @@ class Comment
     private $comment;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Topic")
+     * @ORM\ManyToOne(targetEntity="Topic", inversedBy="Comment")
      * @ORM\JoinColumn(name="topic_id", referencedColumnName="id")
      */
     private $topic;

@@ -4,7 +4,7 @@ namespace AppBundle\Utils;
 class JSONHandler
 {
     
-    static function prepareJSON($data)
+    static function prepareJSON(array $data)
     {
         $resNew = array();
 

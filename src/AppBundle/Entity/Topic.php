@@ -14,7 +14,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 class Topic
 {
     /**
-     * @ORM\OneToMany(targetEntity="Comment")
+     * @ORM\OneToMany(targetEntity="Comment", mappedBy="Topic")
      */
     private $comments;
     

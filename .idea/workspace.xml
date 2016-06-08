@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="534dc364-e63e-481a-9799-8121fa3c532d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/loginet-test.app.iml" afterPath="$PROJECT_DIR$/.idea/loginet-test.app.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/AppBundle/Utils/JSONHandlerTest.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Topic/topic_page.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/TopicControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/AppBundle/Controller/DefaultControllerTest.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Comments/CommentsManager.php" afterPath="$PROJECT_DIR$/src/AppBundle/Comments/CommentsManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/MainController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/MainController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/TopicController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/TopicController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Comment.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Comment.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Topic.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Topic.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/CommentType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/CommentType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Repository/CommentRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/CommentRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Repository/TopicRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/TopicRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Validator/Constraints/ContainsBannedWords.php" afterPath="$PROJECT_DIR$/src/AppBundle/Validator/Constraints/ContainsBannedWords.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Validator/Constraints/ContainsBannedWordsValidator.php" afterPath="$PROJECT_DIR$/src/AppBundle/Validator/Constraints/ContainsBannedWordsValidator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Validator/Constraints/IsAdminNameValidator.php" afterPath="$PROJECT_DIR$/src/AppBundle/Validator/Constraints/IsAdminNameValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Utils/JSONHandler.php" afterPath="$PROJECT_DIR$/src/AppBundle/Utils/JSONHandler.php" />
     </list>
     <ignored path="loginet-test.app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,59 +32,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TopicController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TopicController.php">
+      <file leaf-file-name="JSONHandlerTest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/AppBundle/Utils/JSONHandlerTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <element signature="e#40#97#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="408">
+              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentsManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Comments/CommentsManager.php">
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
-              <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-              <folding>
-                <element signature="e#36#67#0#PHP" expanded="true" />
-                <marker date="1465390092277" expanded="true" signature="982:1104" placeholder="SELECT c FRO... AppBundle" />
-              </folding>
+            <state relative-caret-position="341">
+              <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Topic.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Topic.php">
+      <file leaf-file-name="JSONHandler.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Utils/JSONHandler.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+              <caret line="15" column="53" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comment.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Comment.php">
+      <file leaf-file-name="CommentRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/CommentRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="74" column="42" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
+            <state relative-caret-position="391">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
               <folding>
-                <element signature="e#36#68#0#PHP" expanded="true" />
+                <marker date="1465383522034" expanded="true" signature="394:561" placeholder="SELECT c.id,... AppBundle" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="topic_page.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/Topic/topic_page.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -132,7 +110,6 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/CommentRepository.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/main/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Utils/JSONHandler.php" />
         <option value="$PROJECT_DIR$/web/js/src.js" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/BannedWordController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/Topic/topic_page.html.twig" />
@@ -141,9 +118,13 @@
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Validator/Constraints/ContainsBannedWordsValidator.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Validator/Constraints/IsAdminNameValidator.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Comments/CommentsManager.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Topic.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Comment.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Topic.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Comments/CommentsManager.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Tests/Comments/CommentsManagerTest.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Utils/JSONHandler.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Tests/Utils/JSONHandlerTest.php" />
+        <option value="$PROJECT_DIR$/tests/AppBundle/Utils/JSONHandlerTest.php" />
       </list>
     </option>
   </component>
@@ -268,6 +249,28 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Utils" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loginet-test.app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loginet-test.app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -335,32 +338,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Utils" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="loginet-test.app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="loginet-test.app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -613,6 +590,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Homestead2\Code\loginet-test.app\tests\AppBundle" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
@@ -659,12 +641,12 @@
       <option name="presentableId" value="Default" />
       <updated>1465286628947</updated>
       <workItem from="1465286630133" duration="24613000" />
-      <workItem from="1465379218536" duration="9366000" />
+      <workItem from="1465379218536" duration="11627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33979000" />
+    <option name="totallyTimeSpent" value="36240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -707,48 +689,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/CommentType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <element signature="e#34#74#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/src.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/main/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Topic/topic_page.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/composer.json" />
-    <entry file="file://$PROJECT_DIR$/web/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.homestead/Homestead.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -897,6 +837,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1465311171077" expanded="true" signature="376:579" placeholder="SELECT t, co... AppBundle" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -926,26 +869,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/date_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="331" column="20" selection-start-line="331" selection-start-column="20" selection-end-line="331" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -980,14 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Utils/JSONHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1029,7 +948,7 @@
         <state relative-caret-position="357">
           <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
           <folding>
-            <element signature="e#50#93#0#PHP" expanded="true" />
+            <element signature="e#50#93#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1050,33 +969,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/CommentRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1465383522034" expanded="true" signature="394:561" placeholder="SELECT c.id,... AppBundle" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TopicController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="566">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="e#40#97#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Comments/CommentsManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-          <folding>
-            <element signature="e#36#67#0#PHP" expanded="true" />
-            <marker date="1465390092277" expanded="true" signature="982:1104" placeholder="SELECT c FRO... AppBundle" />
+            <element signature="e#40#97#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1084,7 +982,7 @@
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Topic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
           <folding />
         </state>
       </provider>
@@ -1092,10 +990,103 @@
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Comment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="676">
-          <caret line="74" column="42" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
+          <caret line="74" column="42" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="64" />
           <folding>
-            <element signature="e#36#68#0#PHP" expanded="true" />
+            <element signature="e#36#68#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="1520" column="23" selection-start-line="1520" selection-start-column="23" selection-end-line="1520" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Tests/Comments/CommentsManagerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Comments/CommentsManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="e#36#67#0#PHP" expanded="true" />
+            <marker date="1465391024167" expanded="true" signature="993:1115" placeholder="SELECT c FRO... AppBundle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/date_c.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="316" column="43" selection-start-line="316" selection-start-column="40" selection-end-line="316" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Utils/JSONHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Assert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="267" column="33" selection-start-line="267" selection-start-column="27" selection-end-line="267" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Tests/Controller/TopicControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Topic/topic_page.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/CommentRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <marker date="1465383522034" expanded="true" signature="394:561" placeholder="SELECT c.id,... AppBundle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/AppBundle/Utils/JSONHandlerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

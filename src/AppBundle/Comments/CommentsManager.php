@@ -31,12 +31,12 @@ class CommentsManager
         return true;
     }
 
-    private function getLastUserComment($userData) {
+    public function getLastUserComment($commentData) {
 
         $em = $this->em;
-        $topicId = $userData->getTopic()->getId();
-        $userName = $userData->getName();
-        $userEmail = $userData->getEmail();
+        $topicId = $commentData->getTopic()->getId();
+        $userName = $commentData->getName();
+        $userEmail = $commentData->getEmail();
 
         $query = $em->createQuery(
             "SELECT c
@@ -47,7 +47,7 @@ class CommentsManager
 
         $last = $query->getResult();
 
-        return isset( $last[0] ) && $last[0]->getName() == $userName && $last[0]->getEmail() == $userEmail ? $last[0] : null ;
+        return (isset( $last[0] ) && $last[0]->getName() == $userName && $last[0]->getEmail() == $userEmail) ? $last[0] : null ;
     }
 
 
