@@ -2,6 +2,8 @@
 
 namespace AppBundle\Repository;
 
+use AppBundle\Utils\JSONHandler;
+
 /**
  * CommentRepository
  *
@@ -10,4 +12,19 @@ namespace AppBundle\Repository;
  */
 class CommentRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findAllByTopicForAjax($topicId) {
+
+        $query = $this->getEntityManager()->createQuery(
+            "SELECT c.id, c.name, c.email , c.comment, c.createdAt
+            FROM AppBundle:Comment c
+            WHERE c.topic = {$topicId}
+            ORDER BY c.createdAt DESC
+            "
+        );
+        
+        $res = JSONHandler::prepareJSON( $query->getResult() );
+        
+        return $res;
+    }
+    
 }

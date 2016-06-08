@@ -14,7 +14,7 @@ class IsAdminNameValidator extends ConstraintValidator
 
         if ($value == $adminNick && $currentEmail != $adminEmail) {
             $this->context->buildViolation($constraint->message)
-                ->setParameter('%name%', $adminNick)
+                ->setParameter('%admin_name%', $adminNick)
                 ->setParameter('%admin_email%', $adminEmail)
                 ->addViolation();
         }

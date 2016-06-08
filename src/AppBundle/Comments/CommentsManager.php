@@ -10,31 +10,48 @@ class CommentsManager
     {
         $this->em = $em;
     }
+
     public function saveComment($data)
     {
         $em = $this->em;
-        $topicId = $data->topic->getId();
 
-        $query = $em->createQuery(
-            "SELECT c
-            FROM AppBundle:Comment c
-            WHERE c.topic = {$topicId} AND c.name = {$data->name} AND c.email = {$data->email}
-            ORDER BY c.created_at DESC
-            "
-        );
-
-        $lastUserComment = $query->getResult();
-        $data->setCreatedAt = new \DateTime();
+        $lastUserComment = $this->getLastUserComment($data);
 
         if( !$lastUserComment ) {
             $em->persist($data);
         }
         else {
-            $lastUserComment->comment .= '<br/>---ADDED---<br/>' . $data->comment;
+            $pinnedText = $lastUserComment->getComment() . '<br/>---ADDED---<br/>' . $data->getComment();
+            $lastUserComment->setComment($pinnedText);
             $em->persist($lastUserComment);
         }
 
         $em->flush();
+        
         return true;
     }
+
+    private function getLastUserComment($userData) {
+
+        $em = $this->em;
+        $topicId = $userData->getTopic()->getId();
+        $userName = $userData->getName();
+        $userEmail = $userData->getEmail();
+
+        $query = $em->createQuery(
+            "SELECT c
+            FROM AppBundle:Comment c
+            WHERE c.topic = {$topicId}
+            ORDER BY c.createdAt DESC"
+        )->setMaxResults(1);
+
+        $last = $query->getResult();
+
+        return isset( $last[0] ) && $last[0]->getName() == $userName && $last[0]->getEmail() == $userEmail ? $last[0] : null ;
+    }
+
+
+
+
+
 }

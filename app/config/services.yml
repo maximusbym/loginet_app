@@ -8,10 +8,10 @@ services:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
     validator.contains_banned_words:
-        class: AppBundle\Validator\ContainsBannedWords
+        class: AppBundle\Validator\Constraints\ContainsBannedWordsValidator
         arguments: ['@doctrine.orm.entity_manager']
         tags:
-            - { name: validator.constraint_validator }
+            - { name: validator.constraint_validator, alias: alias_name }
     app.comments_manager:
         class: AppBundle\Comments\CommentsManager
         arguments: ['@doctrine.orm.entity_manager']

@@ -2,6 +2,8 @@
 
 namespace AppBundle\Repository;
 
+use AppBundle\Utils\JSONHandler;
+
 /**
  * TopicRepository
  *
@@ -11,10 +13,10 @@ namespace AppBundle\Repository;
 class TopicRepository extends \Doctrine\ORM\EntityRepository
 {
 
-    public function findAllWithCounts() {
+    public function findAllForAjax() {
 
         $query = $this->getEntityManager()->createQuery(
-            'SELECT t, count(c) AS commentsCount
+            'SELECT t.id, t.title, count(c) AS commentsCount
             FROM AppBundle:Topic t
             LEFT JOIN AppBundle:Comment c WITH c.topic = t.id
             GROUP BY t.id
@@ -22,7 +24,10 @@ class TopicRepository extends \Doctrine\ORM\EntityRepository
             '
         );
 
-        return $query->getResult();
+
+        $res = JSONHandler::prepareJSON( $query->getResult() );
+
+        return $res;
     }
 
 }

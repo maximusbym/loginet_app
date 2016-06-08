@@ -11,9 +11,20 @@ use AppBundle\Validator\Constraints as AppAssert;
  *
  * @ORM\Table(name="comment")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\CommentRepository")
+ * @ORM\HasLifecycleCallbacks
  */
 class Comment
 {
+    /**
+     * @ORM\PrePersist
+     */
+    public function onPrePersist()
+    {
+        if ($this->getCreatedAt() == null) {
+            $this->setCreatedAt(new \DateTime('now'));
+        }
+    }
+
     /**
      * @var int
      *
@@ -36,7 +47,7 @@ class Comment
     /**
      * @var string
      *
-     * @ORM\Column(name="email", type="string", length=100, nullable=false, unique=true)
+     * @ORM\Column(name="email", type="string", length=100, nullable=false)
      *
      * @Assert\NotBlank( message = "This field should not be empty." )
      * @Assert\Email( message = "The email '{{ value }}' is not a valid email." )
@@ -56,11 +67,12 @@ class Comment
      * @ORM\Column(name="comment", type="text", nullable=false)
      *
      * @Assert\NotBlank( message = "This field should not be empty." )
+     * @AppAssert\ContainsBannedWords
      */
     private $comment;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Topic", inversedBy="Comment")
+     * @ORM\ManyToOne(targetEntity="Topic")
      * @ORM\JoinColumn(name="topic_id", referencedColumnName="id")
      */
     private $topic;

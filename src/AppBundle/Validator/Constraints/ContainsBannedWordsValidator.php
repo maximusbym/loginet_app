@@ -15,15 +15,17 @@ class ContainsBannedWordsValidator extends ConstraintValidator
     public function validate($value, Constraint $constraint)
     {
         $em = $this->em;
-        $bannedWords = $em->getRepository('AppBundle:BannedWords')->findAll();
+        $bannedWords = $em->getRepository('AppBundle:BannedWord')->findAll();
 
         foreach( $bannedWords as $bannedWord ) {
 
-            if (strpos($value, $bannedWords) !== false) {
+            $word = $bannedWord->getWord();
+            if (strpos($value, $word) !== false) {
                 $this->context->buildViolation($constraint->message)
-                    ->setParameter('%banned_word%', $bannedWord)
+                    ->setParameter('%banned_word%', $word)
                     ->addViolation();
             }
         }
     }
+
 }
